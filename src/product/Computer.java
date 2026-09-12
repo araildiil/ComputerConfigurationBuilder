@@ -20,7 +20,6 @@ public class Computer {
         this.warrantyYears = warrantyYears;
     }
 
-    @Override
     public String toString() {
         return "Computer{cpu='" + cpu + "', ramGb=" + ramGb +
                 ", gpu='" + gpu + "', storageGb=" + storageGb +
