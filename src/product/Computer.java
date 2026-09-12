@@ -19,6 +19,10 @@ public class Computer {
         this.hasBluetooth = hasBluetooth;
         this.warrantyYears = warrantyYears;
     }
+    public static Computer create(String cpu, int ramGb, String gpu, int storageGb,
+                                  boolean hasWifi, boolean hasBluetooth, int warrantyYears) {
+        return new Computer(cpu, ramGb, gpu, storageGb, hasWifi, hasBluetooth, warrantyYears);
+    }
 
     public String toString() {
         return "Computer{cpu='" + cpu + "', ramGb=" + ramGb +
